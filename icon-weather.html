@@ -14,11 +14,7 @@
 <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
 
-<link rel="stylesheet" href="assets/css/fullcalendar.min.css">
-
-<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
-
-<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+<link rel="stylesheet" href="assets/plugins/icons/weather/weathericons.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
 <!--[if lt IE 9]>
@@ -76,7 +72,7 @@
 <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
 </div>
 </div>
-</a>
+ </a>
 </li>
 <li class="notification-message">
 <a href="activities.html">
@@ -132,7 +128,7 @@
 <li class="nav-item dropdown d-none d-sm-block">
 <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><img src="assets/img/sidebar/icon-23.png" alt=""> </a>
 </li>
- <li class="nav-item dropdown has-arrow">
+<li class="nav-item dropdown has-arrow">
 <a href="#" class=" nav-link user-link" data-toggle="dropdown">
 <span class="user-img"><img class="rounded-circle" src="assets/img/user-06.jpg" width="30" alt="Admin">
 <span class="status online"></span></span>
@@ -170,7 +166,7 @@
 </div>
 <ul class="sidebar-ul">
 <li class="menu-title">Menu</li>
-<li class="active">
+<li>
 <a href="index.html"><img src="assets/img/sidebar/icon-1.png" alt="icon"><span>Dashboard</span></a>
 </li>
 <li class="submenu">
@@ -353,7 +349,7 @@
 <li><a href="icon-pe7.html">Pe7 Icons</a></li>
 <li><a href="icon-simpleline.html">Simpleline Icons</a></li>
 <li><a href="icon-themify.html">Themify Icons</a></li>
-<li><a href="icon-weather.html">Weather Icons</a></li>
+<li><a class="active" href="icon-weather.html">Weather Icons</a></li>
 <li><a href="icon-typicon.html">Typicon Icons</a></li>
 <li><a href="icon-flag.html">Flag Icons</a></li>
 </ul>
@@ -413,7 +409,7 @@
 </li>
 <li>
 <a href="javascript:void(0);"><span>Level 1</span></a>
- </li>
+</li>
 </ul>
 </li>
 </ul>
@@ -424,739 +420,196 @@
 
 <div class="page-wrapper">
 <div class="content container-fluid">
-
 <div class="page-header">
 <div class="row">
-<div class="col-md-6">
-<h3 class="page-title mb-0">Dashboard</h3>
+<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+<h5 class="text-uppercase mb-0 mt-0 page-title">Weather Icon</h5>
 </div>
-<div class="col-md-6">
-<ul class="breadcrumb mb-0 p-0 float-right">
+<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+<ul class="breadcrumb float-right p-0 mb-0">
 <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-<li class="breadcrumb-item"><span>Dashboard</span></li>
+<li class="breadcrumb-item"><a href="#">Icons</a></li>
+<li class="breadcrumb-item"><span>Weather Icon</span></li>
 </ul>
 </div>
 </div>
 </div>
 
 <div class="row">
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="dash-widget dash-widget5">
-<span class="float-left"><img src="assets/img/dash/dash-1.png" alt="" width="80"></span>
-<div class="dash-widget-info text-right">
-<span>Students</span>
-<h3>60,000</h3>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="dash-widget dash-widget5">
-<div class="dash-widget-info text-left d-inline-block">
-<span>Teachers</span>
-<h3>12,000</h3>
-</div>
-<span class="float-right"><img src="assets/img/dash/dash-2.png" width="80" alt=""></span>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="dash-widget dash-widget5">
-<span class="float-left"><img src="assets/img/dash/dash-3.png" alt="" width="80"></span>
-<div class="dash-widget-info text-right">
-<span>Parents</span>
-<h3>20,000</h3>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="dash-widget dash-widget5">
-<div class="dash-widget-info d-inline-block text-left">
-<span>Total Earnings</span>
-<h3>$20,000</h3>
-</div>
-<span class="float-right"><img src="assets/img/dash/dash-4.png" alt="" width="80"></span>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6 d-flex">
-<div class="card flex-fill">
-<div class="card-header">
-<div class="row align-items-center">
-<div class="col-auto">
-<div class="page-title">
-Students Survay
-</div>
-</div>
-<div class="col text-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
- <div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card-body">
-<div id="chart1"></div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 d-flex">
-<div class="card flex-fill">
-<div class="card-header">
-<div class="row align-items-center">
-<div class="col-auto">
-<div class="page-title">
-Student Performance
-</div>
-</div>
-<div class="col text-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card-body">
-<div id="chart2"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6 col-md-12 col-12 d-flex">
-<div class="card flex-fill">
-<div class="card-header">
-<div class="row align-items-center">
-<div class="col-auto">
-<div class="page-title">
-Events
-</div>
-</div>
-<div class="col text-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
- <a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card-body">
-<div id="calendar" class=" overflow-hidden"></div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-md-12 col-12 d-flex">
-<div class="card flex-fill">
-<div class="card-header">
-<div class="row align-items-center">
-<div class="col-auto">
-<div class="page-title">
-Total Member
-</div>
-</div>
-<div class="col text-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card-body d-flex align-items-center justify-content-center overflow-hidden">
-<div id="chart3"> </div>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6 col-md-12 col-12 d-flex">
-<div class="card flex-fill">
-<div class="card-header">
-<div class="row align-items-center">
-<div class="col-auto">
-<div class="page-title">
-Income Monthwise
-</div>
-</div>
-<div class="col text-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card-body">
-<div id="chart4"></div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 d-flex">
-<div class="card flex-fill">
-<div class="card-header">
-<div class="row align-items-center">
-<div class="col-auto">
-<div class="page-title">
-Exam List
-</div>
-</div>
-<div class="col text-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card-body">
-<div class="row">
+
 <div class="col-md-12">
-<div class="table-responsive">
-<table class="table custom-table">
-<thead class="thead-light">
-<tr>
-<th>Exam Name </th>
-<th>Subject</th>
-<th>Class</th>
-<th>Section</th>
-<th>Time</th>
-<th>Date</th>
-<th class="text-right">Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="exam-detail.html" class="avatar bg-green">C</a>
-</td>
-<td>English</td>
-<td>5</td>
-<td>B</td>
-<td>10.00am</td>
-<td>20/1/2019</td>
-<td class="text-right">
-<a href="edit-exam.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<a href="exam-detail.html" class="avatar bg-purple">C</a>
-</td>
-<td>English</td>
-<td>4</td>
-<td>A</td>
-<td>10.00am</td>
-<td>2/1/2019</td>
-<td class="text-right">
-<a href="edit-exam.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<a href="exam-detail.html" class="avatar bg-green">C</a>
-</td>
-<td>Maths</td>
-<td>6</td>
-<td>B</td>
-<td>10.00am</td>
-<td>2/1/2019</td>
-<td class="text-right">
-<a href="edit-exam.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<a href="exam-detail.html" class="avatar bg-dark">C</a>
-</td>
-<td>Science</td>
-<td>3</td>
-<td>B</td>
-<td>10.00am</td>
-<td>20/1/2019</td>
-<td class="text-right">
-<a href="edit-exam.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<a href="exam-detail.html" class="avatar bg-green">C</a>
-</td>
-<td>Maths</td>
-<td>6</td>
-<td>B</td>
-<td>10.00am</td>
-<td>20/1/2019</td>
-<td class="text-right">
-<a href="edit-exam.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<a href="exam-detail.html" class="avatar bg-dark">C</a>
-</td>
-<td>English</td>
-<td>7</td>
-<td>B</td>
-<td>10.00am</td>
-<td>20/1/2019</td>
-<td class="text-right">
-<a href="edit-exam.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<a href="exam-detail.html" class="avatar bg-purple">C</a>
-</td>
-<td>Science</td>
-<td>5</td>
-<td>B</td>
-<td>10.00am</td>
-<td>20/1/2019</td>
-<td class="text-right">
-<a href="edit-exam.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-12">
 <div class="card">
 <div class="card-header">
-<div class="row align-items-center">
-<div class="col-sm-6">
- <div class="page-title">
-All Students
-</div>
-</div>
-<div class="col-sm-6 text-sm-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-outline-primary mr-2"><img src="assets/img/excel.png" alt=""><span class="ml-2">Excel</span></button>
-<button class="btn btn-outline-danger mr-2"><img src="assets/img/pdf.png" alt="" height="18"><span class="ml-2">PDF</span></button>
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
+<div class="card-title">Weather Icon</div>
 </div>
 <div class="card-body">
-<div class="table-responsive">
-<table class="table custom-table">
-<thead class="thead-light">
-<tr>
-<th>Name </th>
-<th>Student ID</th>
-<th>Class</th>
-<th>Section</th>
-<th>Mobile</th>
-<th>Date of Birth</th>
-<th class="text-right">Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-1.jpg" alt=""></a><a href="profile.html">Parker <span></span></a></h2>
-</td>
-<td>ST-0d001</td>
-<td>1</td>
-<td>A</td>
-<td>973-584-58700</td>
-<td>20/1/2021</td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-2.jpg" alt=""></a><a href="profile.html">Smith <span></span></a></h2>
-</td>
-<td>ST-0d002</td>
-<td>2</td>
-<td>B</td>
-<td>973-584-58700</td>
-<td>20/1/2021</td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-3.jpg" alt=""></a><a href="profile.html">Hensley<span></span></a></h2>
-</td>
-<td>ST-0d003</td>
-<td>1</td>
-<td>A</td>
-<td>973-584-58700</td>
-<td>20/1/2021</td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-4.jpg" alt=""></a><a href="profile.html">Friesen<span></span></a></h2>
-</td>
-<td>ST-0d004</td>
-<td>1</td>
-<td>A</td>
-<td>973-584-58700</td>
-<td>20/1/2021</td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
- </button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-5.jpg" alt=""></a><a href="profile.html">Jackson<span></span></a></h2>
-</td>
-<td>ST-0d005</td>
-<td>1</td>
-<td>A</td>
-<td>973-584-58700</td>
-<td>20/1/2021</td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-6.jpg" alt=""></a><a href="profile.html">Mason<span></span></a></h2>
-</td>
-<td>ST-0d006</td>
-<td>1</td>
-<td>A</td>
-<td>973-584-58700</td>
-<td>20/1/2021</td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-7.jpg" alt=""></a><a href="profile.html">Garrett <span></span></a></h2>
-</td>
-<td>ST-0d007</td>
-<td>1</td>
-<td>A</td>
-<td>973-584-58700</td>
-<td>20/1/2021</td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="icons-items">
+<ul class="icons-list">
+<li><i class="wi wi-day-cloudy-high" data-bs-toggle="tooltip" title="wi wi-day-cloudy-high"></i></li>
+<li><i class="wi wi-moonrise" data-bs-toggle="tooltip" title="wi wi-moonrise"></i></li>
+<li><i class="wi wi-na" data-bs-toggle="tooltip" title="wi wi-na"></i></li>
+<li><i class="wi wi-volcano" data-bs-toggle="tooltip" title="wi wi-volcano"></i></li>
+<li><i class="wi wi-day-light-wind" data-bs-toggle="tooltip" title="wi wi-day-light-wind"></i></li>
+<li><i class="wi wi-moonset" data-bs-toggle="tooltip" title="wi wi-moonset"></i></li>
+<li><i class="wi wi-flood" data-bs-toggle="tooltip" title="wi wi-flood"></i></li>
+<li><i class="wi wi-train" data-bs-toggle="tooltip" title="wi wi-train"></i></li>
+<li><i class="wi wi-day-sleet" data-bs-toggle="tooltip" title="wi wi-day-sleet"></i></li>
+<li><i class="wi wi-night-sleet" data-bs-toggle="tooltip" title="wi wi-night-sleet"></i></li>
+<li><i class="wi wi-sandstorm" data-bs-toggle="tooltip" title="wi wi-sandstorm"></i></li>
+<li><i class="wi wi-small-craft-advisory" data-bs-toggle="tooltip" title="wi wi-small-craft-advisory"></i></li>
+<li><i class="wi wi-day-haze" data-bs-toggle="tooltip" title="wi wi-day-haze"></i></li>
+<li><i class="wi wi-night-alt-sleet" data-bs-toggle="tooltip" title="wi wi-night-alt-sleet"></i></li>
+<li><i class="wi wi-tsunami" data-bs-toggle="tooltip" title="wi wi-tsunami"></i></li>
+<li><i class="wi wi-gale-warning" data-bs-toggle="tooltip" title="wi wi-gale-warning"></i></li>
+<li><i class="wi wi-night-cloudy-high" data-bs-toggle="tooltip" title="wi wi-night-cloudy-high"></i></li>
+<li><i class="wi wi-raindrop" data-bs-toggle="tooltip" title="wi wi-raindrop"></i></li>
+<li><i class="wi wi-earthquake" data-bs-toggle="tooltip" title="wi wi-earthquake"></i></li>
+<li><i class="wi wi-storm-warning" data-bs-toggle="tooltip" title="wi wi-storm-warning"></i></li>
+<li><i class="wi wi-night-alt-partly-cloudy" data-bs-toggle="tooltip" title="wi wi-night-alt-partly-cloudy"></i></li>
+<li><i class="wi wi-barometer" data-bs-toggle="tooltip" title="wi wi-barometer"></i></li>
+<li><i class="wi wi-fire" data-bs-toggle="tooltip" title="wi wi-fire"></i></li>
+<li><i class="wi wi-hurricane-warning" data-bs-toggle="tooltip" title="wi wi-hurricane-warning"></i></li>
+<li><i class="wi wi-sleet" data-bs-toggle="tooltip" title="wi wi-sleet"></i></li>
+<li><i class="wi wi-humidity" data-bs-toggle="tooltip" title="wi wi-humidity"></i></li>
+<li><i class="wi wi-day-sunny" data-bs-toggle="tooltip" title="wi wi-day-sunny"></i></li>
+<li><i class="wi wi-day-cloudy" data-bs-toggle="tooltip" title="wi wi-day-cloudy"></i></li>
+<li><i class="wi wi-day-cloudy-gusts" data-bs-toggle="tooltip" title="wi wi-day-cloudy-gusts"></i></li>
+<li><i class="wi wi-day-cloudy-windy" data-bs-toggle="tooltip" title="wi wi-day-cloudy-windy"></i></li>
+<li><i class="wi wi-day-fog" data-bs-toggle="tooltip" title="wi wi-day-fog"></i></li>
+<li><i class="wi wi-day-hail" data-bs-toggle="tooltip" title="wi wi-day-hail"></i></li>
+<li><i class="wi wi-day-haze" data-bs-toggle="tooltip" title="wi wi-day-haze"></i></li>
+<li><i class="wi wi-day-lightning" data-bs-toggle="tooltip" title="wi wi-day-lightning"></i></li>
+<li><i class="wi wi-day-rain" data-bs-toggle="tooltip" title="wi wi-day-rain"></i></li>
+<li><i class="wi wi-day-rain-mix" data-bs-toggle="tooltip" title="wi wi-day-rain-mix"></i></li>
+<li><i class="wi wi-day-rain-wind" data-bs-toggle="tooltip" title="wi wi-day-rain-wind"></i></li>
+<li><i class="wi wi-day-showers" data-bs-toggle="tooltip" title="wi wi-day-showers"></i></li>
+<li><i class="wi wi-day-sleet" data-bs-toggle="tooltip" title="wi wi-day-sleet"></i></li>
+<li><i class="wi wi-day-sleet-storm" data-bs-toggle="tooltip" title="wi wi-day-sleet-storm"></i></li>
+<li><i class="wi wi-day-snow" data-bs-toggle="tooltip" title="wi wi-day-snow"></i></li>
+<li><i class="wi wi-day-snow-thunderstorm" data-bs-toggle="tooltip" title="wi wi-day-snow-thunderstorm"></i></li>
+<li><i class="wi wi-day-snow-wind" data-bs-toggle="tooltip" title="wi wi-day-snow-wind"></i></li>
+<li><i class="wi wi-day-sprinkle" data-bs-toggle="tooltip" title="wi wi-day-sprinkle"></i></li>
+<li><i class="wi wi-day-storm-showers" data-bs-toggle="tooltip" title="wi wi-day-storm-showers"></i></li>
+<li><i class="wi wi-day-sunny-overcast" data-bs-toggle="tooltip" title="wi wi-day-sunny-overcast"></i></li>
+<li><i class="wi wi-day-thunderstorm" data-bs-toggle="tooltip" title="wi wi-day-thunderstorm"></i></li>
+<li><i class="wi wi-day-windy" data-bs-toggle="tooltip" title="wi wi-day-windy"></i></li>
+<li><i class="wi wi-solar-eclipse" data-bs-toggle="tooltip" title="wi wi-solar-eclipse"></i></li>
+<li><i class="wi wi-hot" data-bs-toggle="tooltip" title="wi wi-hot"></i></li>
+<li><i class="wi wi-day-cloudy-high" data-bs-toggle="tooltip" title="wi wi-day-cloudy-high"></i></li>
+<li><i class="wi wi-day-light-wind" data-bs-toggle="tooltip" title="wi wi-day-light-wind"></i></li>
+<li><i class="wi wi-night-clear" data-bs-toggle="tooltip" title="wi wi-night-clear"></i></li>
+<li><i class="wi wi-night-alt-cloudy" data-bs-toggle="tooltip" title="wi wi-night-alt-cloudy"></i></li>
+<li><i class="wi wi-night-alt-cloudy-gusts" data-bs-toggle="tooltip" title="wi wi-night-alt-cloudy-gusts"></i></li>
+<li><i class="wi wi-night-alt-cloudy-windy" data-bs-toggle="tooltip" title="wi wi-night-alt-cloudy-windy"></i></li>
+<li><i class="wi wi-night-alt-hail" data-bs-toggle="tooltip" title="wi wi-night-alt-hail"></i></li>
+<li><i class="wi wi-night-alt-lightning" data-bs-toggle="tooltip" title="wi wi-night-alt-lightning"></i></li>
+<li><i class="wi wi-night-alt-rain" data-bs-toggle="tooltip" title="wi wi-night-alt-rain"></i></li>
+<li><i class="wi wi-night-alt-rain-mix" data-bs-toggle="tooltip" title="wi wi-night-alt-rain-mix"></i></li>
+<li><i class="wi wi-night-alt-rain-wind" data-bs-toggle="tooltip" title="wi wi-night-alt-rain-wind"></i></li>
+<li><i class="wi wi-night-alt-showers" data-bs-toggle="tooltip" title="wi wi-night-alt-showers"></i></li>
+<li><i class="wi wi-night-alt-sleet" data-bs-toggle="tooltip" title="wi wi-night-alt-sleet"></i></li>
+<li><i class="wi wi-night-alt-sleet-storm" data-bs-toggle="tooltip" title="wi wi-night-alt-sleet-storm"></i></li>
+<li><i class="wi wi-night-alt-snow" data-bs-toggle="tooltip" title="wi wi-night-alt-snow"></i></li>
+<li><i class="wi wi-night-alt-snow-thunderstorm" data-bs-toggle="tooltip" title="wi wi-night-alt-snow-thunderstorm"></i></li>
+<li><i class="wi wi-night-alt-snow-wind" data-bs-toggle="tooltip" title="wi wi-night-alt-snow-wind"></i></li>
+<li><i class="wi wi-night-alt-sprinkle" data-bs-toggle="tooltip" title="wi wi-night-alt-sprinkle"></i></li>
+<li><i class="wi wi-night-alt-storm-showers" data-bs-toggle="tooltip" title="wi wi-night-alt-storm-showers"></i></li>
+<li><i class="wi wi-night-alt-thunderstorm" data-bs-toggle="tooltip" title="wi wi-night-alt-thunderstorm"></i></li>
+<li><i class="wi wi-night-cloudy" data-bs-toggle="tooltip" title="wi wi-night-cloudy"></i></li>
+<li><i class="wi wi-night-cloudy-gusts" data-bs-toggle="tooltip" title="wi wi-night-cloudy-gusts"></i></li>
+<li><i class="wi wi-night-cloudy-windy" data-bs-toggle="tooltip" title="wi wi-night-cloudy-windy"></i></li>
+<li><i class="wi wi-night-fog" data-bs-toggle="tooltip" title="wi wi-night-fog"></i></li>
+<li><i class="wi wi-night-hail" data-bs-toggle="tooltip" title="wi wi-night-hail"></i></li>
+<li><i class="wi wi-night-lightning" data-bs-toggle="tooltip" title="wi wi-night-lightning"></i></li>
+<li><i class="wi wi-night-partly-cloudy" data-bs-toggle="tooltip" title="wi wi-night-partly-cloudy"></i></li>
+<li><i class="wi wi-night-rain" data-bs-toggle="tooltip" title="wi wi-night-rain"></i></li>
+ <li><i class="wi wi-night-rain-mix" data-bs-toggle="tooltip" title="wi wi-night-rain-mix"></i></li>
+<li><i class="wi wi-night-rain-wind" data-bs-toggle="tooltip" title="wi wi-night-rain-wind"></i></li>
+<li><i class="wi wi-night-showers" data-bs-toggle="tooltip" title="wi wi-night-showers"></i></li>
+<li><i class="wi wi-night-sleet" data-bs-toggle="tooltip" title="wi wi-night-sleet"></i></li>
+<li><i class="wi wi-night-sleet-storm" data-bs-toggle="tooltip" title="wi wi-night-sleet-storm"></i></li>
+<li><i class="wi wi-night-snow" data-bs-toggle="tooltip" title="wi wi-night-snow"></i></li>
+<li><i class="wi wi-night-snow-thunderstorm" data-bs-toggle="tooltip" title="wi wi-night-snow-thunderstorm"></i></li>
+<li><i class="wi wi-night-snow-wind" data-bs-toggle="tooltip" title="wi wi-night-snow-wind"></i></li>
+<li><i class="wi wi-night-sprinkle" data-bs-toggle="tooltip" title="wi wi-night-sprinkle"></i></li>
+<li><i class="wi wi-night-storm-showers" data-bs-toggle="tooltip" title="wi wi-night-storm-showers"></i></li>
+<li><i class="wi wi-night-thunderstorm" data-bs-toggle="tooltip" title="wi wi-night-thunderstorm"></i></li>
+<li><i class="wi wi-lunar-eclipse" data-bs-toggle="tooltip" title="wi wi-lunar-eclipse"></i></li>
+<li><i class="wi wi-stars" data-bs-toggle="tooltip" title="wi wi-stars"></i></li>
+<li><i class="wi wi-storm-showers" data-bs-toggle="tooltip" title="wi wi-storm-showers"></i></li>
+<li><i class="wi wi-night-alt-cloudy-high" data-bs-toggle="tooltip" title="wi wi-night-alt-cloudy-high"></i></li>
+<li><i class="wi wi-night-cloudy-high" data-bs-toggle="tooltip" title="wi wi-night-cloudy-high"></i></li>
+<li><i class="wi wi-night-alt-partly-cloudy" data-bs-toggle="tooltip" title="wi wi-night-alt-partly-cloudy"></i></li>
+<li><i class="wi wi-cloud" data-bs-toggle="tooltip" title="wi wi-cloud"></i></li>
+<li><i class="wi wi-cloudy" data-bs-toggle="tooltip" title="wi wi-cloudy"></i></li>
+<li><i class="wi wi-cloudy-gusts" data-bs-toggle="tooltip" title="wi wi-cloudy-gusts"></i></li>
+<li><i class="wi wi-cloudy-windy" data-bs-toggle="tooltip" title="wi wi-cloudy-windy"></i></li>
+<li><i class="wi wi-fog" data-bs-toggle="tooltip" title="wi wi-fog"></i></li>
+<li><i class="wi wi-hail" data-bs-toggle="tooltip" title="wi wi-hail"></i></li>
+<li><i class="wi wi-rain" data-bs-toggle="tooltip" title="wi wi-rain"></i></li>
+<li><i class="wi wi-rain-mix" data-bs-toggle="tooltip" title="wi wi-rain-mix"></i></li>
+<li><i class="wi wi-rain-wind" data-bs-toggle="tooltip" title="wi wi-rain-wind"></i></li>
+<li><i class="wi wi-showers" data-bs-toggle="tooltip" title="wi wi-showers"></i></li>
+<li><i class="wi wi-sleet" data-bs-toggle="tooltip" title="wi wi-sleet"></i></li>
+<li><i class="wi wi-snow" data-bs-toggle="tooltip" title="wi wi-snow"></i></li>
+<li><i class="wi wi-sprinkle" data-bs-toggle="tooltip" title="wi wi-sprinkle"></i></li>
+<li><i class="wi wi-storm-showers" data-bs-toggle="tooltip" title="wi wi-storm-showers"></i></li>
+<li><i class="wi wi-thunderstorm" data-bs-toggle="tooltip" title="wi wi-thunderstorm"></i></li>
+<li><i class="wi wi-snow-wind" data-bs-toggle="tooltip" title="wi wi-snow-wind"></i></li>
+<li><i class="wi wi-snow" data-bs-toggle="tooltip" title="wi wi-snow"></i></li>
+<li><i class="wi wi-smog" data-bs-toggle="tooltip" title="wi wi-smog"></i></li>
+<li><i class="wi wi-smoke" data-bs-toggle="tooltip" title="wi wi-smoke"></i></li>
+<li><i class="wi wi-lightning" data-bs-toggle="tooltip" title="wi wi-lightning"></i></li>
+<li><i class="wi wi-raindrops" data-bs-toggle="tooltip" title="wi wi-raindrops"></i></li>
+<li><i class="wi wi-raindrop" data-bs-toggle="tooltip" title="wi wi-raindrop"></i></li>
+<li><i class="wi wi-snowflake-cold" data-bs-toggle="tooltip" title="wi wi-snowflake-cold"></i></li>
+<li><i class="wi wi-windy" data-bs-toggle="tooltip" title="wi wi-windy"></i></li>
+<li><i class="wi wi-strong-wind" data-bs-toggle="tooltip" title="wi wi-strong-wind"></i></li>
+<li><i class="wi wi-sandstorm" data-bs-toggle="tooltip" title="wi wi-sandstorm"></i></li>
+<li><i class="wi wi-earthquake" data-bs-toggle="tooltip" title="wi wi-earthquake"></i></li>
+<li><i class="wi wi-fire" data-bs-toggle="tooltip" title="wi wi-fire"></i></li>
+<li><i class="wi wi-flood" data-bs-toggle="tooltip" title="wi wi-flood"></i></li>
+<li><i class="wi wi-meteor" data-bs-toggle="tooltip" title="wi wi-meteor"></i></li>
+<li><i class="wi wi-tsunami" data-bs-toggle="tooltip" title="wi wi-tsunami"></i></li>
+<li><i class="wi wi-volcano" data-bs-toggle="tooltip" title="wi wi-volcano"></i></li>
+<li><i class="wi wi-hurricane" data-bs-toggle="tooltip" title="wi wi-hurricane"></i></li>
+<li><i class="wi wi-tornado" data-bs-toggle="tooltip" title="wi wi-tornado"></i></li>
+<li><i class="wi wi-small-craft-advisory" data-bs-toggle="tooltip" title="wi wi-small-craft-advisory"></i></li>
+<li><i class="wi wi-gale-warning" data-bs-toggle="tooltip" title="wi wi-gale-warning"></i></li>
+<li><i class="wi wi-storm-warning" data-bs-toggle="tooltip" title="wi wi-storm-warning"></i></li>
+<li><i class="wi wi-hurricane-warning" data-bs-toggle="tooltip" title="wi wi-hurricane-warning"></i></li>
+<li><i class="wi wi-wind-direction" data-bs-toggle="tooltip" title="wi wi-wind-direction"></i></li>
+<li><i class="wi wi-alien" data-bs-toggle="tooltip" title="wi wi-alien"></i></li>
+<li><i class="wi wi-celsius" data-bs-toggle="tooltip" title="wi wi-celsius"></i></li>
+<li><i class="wi wi-fahrenheit" data-bs-toggle="tooltip" title="wi wi-fahrenheit"></i></li>
+<li><i class="wi wi-degrees" data-bs-toggle="tooltip" title="wi wi-degrees"></i></li>
+<li><i class="wi wi-thermometer" data-bs-toggle="tooltip" title="wi wi-thermometer"></i></li>
+<li><i class="wi wi-thermometer-exterior" data-bs-toggle="tooltip" title="wi wi-thermometer-exterior"></i></li>
+<li><i class="wi wi-thermometer-internal" data-bs-toggle="tooltip" title="wi wi-thermometer-internal"></i></li>
+<li><i class="wi wi-cloud-down" data-bs-toggle="tooltip" title="wi wi-cloud-down"></i></li>
+<li><i class="wi wi-cloud-up" data-bs-toggle="tooltip" title="wi wi-cloud-up"></i></li>
+<li><i class="wi wi-cloud-refresh" data-bs-toggle="tooltip" title="wi wi-cloud-refresh"></i></li>
+<li><i class="wi wi-horizon" data-bs-toggle="tooltip" title="wi wi-horizon"></i></li>
+<li><i class="wi wi-horizon-alt" data-bs-toggle="tooltip" title="wi wi-horizon-alt"></i></li>
+<li><i class="wi wi-sunrise" data-bs-toggle="tooltip" title="wi wi-sunrise"></i></li>
+<li><i class="wi wi-sunset" data-bs-toggle="tooltip" title="wi wi-sunset"></i></li>
+<li><i class="wi wi-moonrise" data-bs-toggle="tooltip" title="wi wi-moonrise"></i></li>
+<li><i class="wi wi-moonset" data-bs-toggle="tooltip" title="wi wi-moonset"></i></li>
+<li><i class="wi wi-refresh" data-bs-toggle="tooltip" title="typcn typcn-rss-outline"></i></li>
+<li><i class="wi wi-refresh-alt" data-bs-toggle="tooltip" title="wi wi-refresh-alt"></i></li>
+<li><i class="wi wi-umbrella" data-bs-toggle="tooltip" title="wi wi-umbrella"></i></li>
+<li><i class="wi wi-barometer" data-bs-toggle="tooltip" title="wi wi-barometer"></i></li>
+<li><i class="wi wi-humidity" data-bs-toggle="tooltip" title="wi wi-humidity"></i></li>
+<li><i class="wi wi-na" data-bs-toggle="tooltip" title="wi wi-na"></i></li>
+<li><i class="wi wi-train" data-bs-toggle="tooltip" title="wi wi-train"></i></li>
+</ul>
 </div>
 </div>
 </div>
 </div>
+
 </div>
-<div class="row">
-<div class="col-12">
-<div class="card">
-<div class="card-header">
-<div class="row align-items-center">
-<div class="col-sm-6">
-<div class="page-title">
-New Students
-</div>
-</div>
-<div class="col-sm-6 text-sm-right">
-<div class=" mt-sm-0 mt-2">
-<button class="btn btn-outline-primary mr-2"><img src="assets/img/excel.png" alt=""><span class="ml-2">Excel</span></button>
-<button class="btn btn-outline-danger mr-2"><img src="assets/img/pdf.png" alt="" height="18"><span class="ml-2">PDF</span></button>
-<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Another action</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card-body">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-<div class="table-responsive">
-<table class="table custom-table">
-<thead class="thead-light">
-<tr>
-<th>Name </th>
-<th>Student ID</th>
-<th>Parent Name</th>
-<th>Mobile</th>
-<th>Address</th>
-<th>Date Of Admition</th>
-<th>Fees Receipt</th>
-<th class="text-right">Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-1.jpg" alt=""></a><a href="profile.html">Parker <span></span></a></h2>
-</td>
-<td>ST-0d001</td>
-<td>Mr. Johnson</td>
-<td>973-584-58700</td>
-<td>9946 Baker Rd. Marysville, </td>
-<td>20/1/2021</td>
-<td><img src="assets/img/pdf.png" alt=""></td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
- <i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-2.jpg" alt=""></a><a href="profile.html">Smith <span></span></a></h2>
-</td>
-<td>ST-0d002</td>
-<td>Mr. Luke Idaman</td>
-<td>973-584-58700</td>
-<td>193 S. Harrison Drive </td>
-<td>20/1/2021</td>
-<td><img src="assets/img/pdf.png" alt=""></td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-3.jpg" alt=""></a><a href="profile.html">Hensley<span></span></a></h2>
-</td>
-<td>ST-0d003</td>
-<td>Mr. Kevin H</td>
-<td>973-584-58700</td>
-<td>8949 Golf St. Palm Coast </td>
-<td>20/1/2021</td>
-<td><img src="assets/img/pdf.png" alt=""></td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-4.jpg" alt=""></a><a href="profile.html">Friesen<span></span></a></h2>
-</td>
-<td>ST-0d004</td>
-<td>Mr. Randy O</td>
-<td>973-584-58700</td>
-<td>23 Ohio Court Alexandria </td>
-<td>20/1/2021</td>
-<td><img src="assets/img/pdf.png" alt=""></td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-5.jpg" alt=""></a><a href="profile.html">Jackson<span></span></a></h2>
-</td>
-<td>ST-0d005</td>
-<td>Mr. Steven</td>
-<td>973-584-58700</td>
-<td>338 North Cleveland Rd </td>
-<td>20/1/2021</td>
-<td><img src="assets/img/pdf.png" alt=""></td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-6.jpg" alt=""></a><a href="profile.html">Mason<span></span></a></h2>
-</td>
-<td>ST-0d006</td>
-<td>Mr. Ervin</td>
-<td>973-584-58700</td>
-<td>7909 W. Sunnyslope St. </td>
-<td>20/1/2021</td>
-<td><img src="assets/img/pdf.png" alt=""></td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-<tr>
-<td>
-<h2><a href="profile.html" class="avatar text-white"><img src="assets/img/profile/img-7.jpg" alt=""></a>
-<a href="profile.html">Garrett <span></span></a></h2>
-</td>
-<td>ST-0d007</td>
-<td>Mr. Marquz</td>
-<td>973-584-58700</td>
-<td>7361 Dunbar Street </td>
-<td>20/1/2021</td>
-<td><img src="assets/img/pdf.png" alt=""></td>
-<td class="text-right">
-<a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
-<i class="far fa-edit"></i>
-</a>
-<button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">
-<i class="far fa-trash-alt"></i>
-</button>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 </div>
 <div class="notification-box">
 <div class="msg-sidebar notifications msg-noti">
@@ -1184,7 +637,7 @@ New Students
 <a href="chat.html">
 <div class="list-item new-message">
 <div class="list-left">
-<span class="avatar">J</span>
+ <span class="avatar">J</span>
 </div>
 <div class="list-body">
 <span class="message-author">Ruth C. Gault</span>
@@ -1368,27 +821,14 @@ New Students
 </div>
 </div>
 </div>
-</div>
 
 </div>
-
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/jquery.slimscroll.js"></script>
- 
-<script src="assets/js/select2.min.js"></script>
-<script src="assets/js/moment.min.js"></script>
-
-<script src="assets/js/fullcalendar.min.js"></script>
-<script src="assets/js/jquery.fullcalendar.js"></script>
-
-<script src="assets/plugins/morris/morris.min.js"></script>
-<script src="assets/plugins/raphael/raphael-min.js"></script>
-<script src="assets/js/apexcharts.js"></script>
-<script src="assets/js/chart-data.js"></script>
 
 <script src="assets/js/app.js"></script>
 </body>
